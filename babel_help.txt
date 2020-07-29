@@ -1,0 +1,10 @@
+To retrieve an updated list of text
+pybabel extract -F babel.cfg -k _l -o messages.pot .
+
+To update existing Language Files
+(Windows) pybabel update -i messages.pot -d .\app\translations\
+(Unix) pybabel update -i messages.pot -d app/translations
+
+Compile Lanuage Files (po) to (mo)
+(Windows) pybabel compile -d .\app\translations\
+(Unix) pybabel compile -d app/translations

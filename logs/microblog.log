@@ -39,3 +39,5 @@ Traceback (most recent call last):
   File "e:\documents\python\micro_blog\venv\lib\site-packages\werkzeug\routing.py", line 2179, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'reset_password' with values ['token']. Did you mean 'reset_password_request' instead?
+2020-07-28 23:04:01,908 INFO: Microblog startup [in E:\Documents\Python\micro_blog\app\__init__.py:52]
+2020-07-28 23:04:31,463 INFO: Microblog startup [in E:\Documents\Python\micro_blog\app\__init__.py:52]

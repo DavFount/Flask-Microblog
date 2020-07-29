@@ -4,3 +4,5 @@ app\__pycache__
 .flaskenv
 config.py
 .vscode
+messages.pot
+messages.mo
