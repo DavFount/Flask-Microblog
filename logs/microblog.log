@@ -41,3 +41,5 @@ Traceback (most recent call last):
 werkzeug.routing.BuildError: Could not build url for endpoint 'reset_password' with values ['token']. Did you mean 'reset_password_request' instead?
 2020-07-28 23:04:01,908 INFO: Microblog startup [in E:\Documents\Python\micro_blog\app\__init__.py:52]
 2020-07-28 23:04:31,463 INFO: Microblog startup [in E:\Documents\Python\micro_blog\app\__init__.py:52]
+2020-07-29 09:47:15,208 INFO: Microblog startup [in E:\Documents\Python\micro_blog\app\__init__.py:52]
+2020-07-29 09:57:49,089 INFO: Microblog startup [in E:\Documents\Python\micro_blog\app\__init__.py:52]
