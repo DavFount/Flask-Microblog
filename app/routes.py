@@ -1,7 +1,7 @@
 from datetime import datetime
 from flask import render_template, flash, redirect, url_for, request
 from app import app, db
-from app.forms import LoginForm, RegistrationForm, EditProfileForm, PostForm, ResetPasswordRequestForm, ResetPasswordForm
+from app.forms import LoginForm, RegistrationForm, EditProfileForm, PostForm, ResetPasswordRequestForm, ResetPasswordForm, EmptyForm
 from flask_login import current_user, login_user, logout_user, login_required
 from app.models import User, Post
 from werkzeug.urls import url_parse
@@ -99,7 +99,8 @@ def user(username):
         if posts.has_next else None
     prev_url = url_for('user', username=username, page=posts.prev_num) \
         if posts.has_prev else None
-    return render_template('user.html', title=user.username, user=user, posts=posts.items, next_url=next_url, prev_url=prev_url)
+    form = EmptyForm()
+    return render_template('user.html', title=user.username, user=user, posts=posts.items, next_url=next_url, prev_url=prev_url, form=form)
 
 @app.route('/edit_profile', methods=['GET', 'POST'])
 @login_required
